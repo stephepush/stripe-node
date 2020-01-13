@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.use(morgan('short'));
 
-//app.set('view engine', )
+//app.set('view engine', 'handlebars' )
 
 app.use(require('./routes'));
 
