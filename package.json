@@ -1,0 +1,19 @@
+{
+  "name": "stripe-node",
+  "version": "1.0.0",
+  "description": "Dabbling with stripe using node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephepush/stripe-node.git"
+  },
+  "author": "Stephen Peters",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stephepush/stripe-node/issues"
+  },
+  "homepage": "https://github.com/stephepush/stripe-node#readme"
+}
