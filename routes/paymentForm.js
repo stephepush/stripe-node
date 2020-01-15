@@ -1,11 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-
 router.get('/', (req, res)=>{
-    res.render('pages/index')
-})
-
-router.use('/paymentForm', require('./paymentForm.js'));
+    res.render('pages/checkout.hbs')
+});
 
 module.exports = router;
