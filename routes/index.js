@@ -6,6 +6,7 @@ router.get('/', (req, res)=>{
     res.render('pages/index')
 })
 
+
 router.use('/paymentForm', require('./paymentForm.js'));
 
 module.exports = router;
