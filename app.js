@@ -4,7 +4,7 @@ const app = express();
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
-const hbs = require("express-handlebars");
+const hbs = require("hbs");
 
 const PORT = process.env.PORT || 3000
 
@@ -13,10 +13,10 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.use(morgan('short'));
 
+app.set('view engine', 'hbs');
 
-app.set('view engine', 'hbs' );
+hbs.registerPartials(__dirname + '/views/partials/');
 
-hbs.registerPartials(__dirname + '/views/partials/head.hbs');
 
 app.use(require('./routes'));
 dotenv.config();
