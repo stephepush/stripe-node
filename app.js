@@ -24,6 +24,8 @@ dotenv.config();
 const stripeSecretKey = process.env.STRIPE_SECRET_KEY;
 const stripePublicKey = process.env.STRIPE_PUBLIC_KEY;
 
+app.locals.stripePublicKey = stripePublicKey;
+
 //console.log(stripePublicKey + " also: " + stripeSecretKey)
 
 app.listen(PORT, ()=>{
