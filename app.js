@@ -17,12 +17,13 @@ app.set('view engine', 'hbs');
 
 hbs.registerPartials(__dirname + '/views/partials/');
 
-
+app.use(express.static('./public'));
 app.use(require('./routes'));
 dotenv.config();
 
 const stripeSecretKey = process.env.STRIPE_SECRET_KEY;
 const stripePublicKey = process.env.STRIPE_PUBLIC_KEY;
+
 
 app.locals.stripePublicKey = stripePublicKey;
 
